@@ -5,13 +5,12 @@ Infrared Proximity Sensor Library for Arduino + Grove shield
 
 ##Example
 ```c++
-#include <Grove.h>
 #include <GroveInfraredProxymitySensor.h>
 
-GroveInfraredProxymitySensor proximity(GROVE_A2);
+GroveInfraredProxymitySensor proximity;
 
 void setup() {
-  proximity.initialize();
+  proximity.initialize(GROVE_A2);
   Serial.begin(9200);
 }
 
@@ -23,12 +22,11 @@ void loop() {
 
 ##Documentation
 
-###`GroveInfraredProxymitySensor(GrovePin pins)`
+###`void initialize(GrovePin pins)`
+Initialize the sensor before using it.
+
 Parameters:
 - `pins`: Must be a analog socket (GROVE_A0 to GROVE_A3)
-
-###`void initialize()`
-Initialize the sensor before using it.
 
 ###`unsigned int getRawData(unsigned char numberOfMesurements = 20)`
 Parameters:

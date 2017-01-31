@@ -9,8 +9,8 @@ class GroveInfraredProxymitySensor {
 		unsigned int _pinSensor; 
 
 	public:
-		GroveInfraredProxymitySensor(GrovePin pins);
-		void initialize();
+		GroveInfraredProxymitySensor();
+		void initialize(GrovePin pins);
 		unsigned int getRawData(unsigned char numberOfMesurements = 20); 
 		double getDistance();
 };

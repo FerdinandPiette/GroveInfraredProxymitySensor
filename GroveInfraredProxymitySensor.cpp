@@ -1,12 +1,10 @@
 #include "../Grove/Grove.h"
 #include "GroveInfraredProxymitySensor.h"
 
-GroveInfraredProxymitySensor::GroveInfraredProxymitySensor(GrovePin pins)
-{
-	this->_pinSensor = pins.pin2;
-}
+GroveInfraredProxymitySensor::GroveInfraredProxymitySensor() { }
 
-void GroveInfraredProxymitySensor::initialize() {	
+void GroveInfraredProxymitySensor::initialize(GrovePin pins) {	
+	this->_pinSensor = pins.pin2;
 	pinMode(this->_pinSensor, INPUT);
 }
 
