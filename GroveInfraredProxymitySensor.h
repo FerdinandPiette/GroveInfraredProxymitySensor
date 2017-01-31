@@ -2,6 +2,7 @@
 #define GroveInfraredProxymitySensor_H
 
 #include <Arduino.h>
+#include <Grove.h>
 
 
 class GroveInfraredProxymitySensor {

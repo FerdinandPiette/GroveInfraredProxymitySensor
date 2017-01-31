@@ -1,4 +1,3 @@
-#include "../Grove/Grove.h"
 #include "GroveInfraredProxymitySensor.h"
 
 GroveInfraredProxymitySensor::GroveInfraredProxymitySensor() { }
