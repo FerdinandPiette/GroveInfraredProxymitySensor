@@ -15,7 +15,7 @@ void setup() {
 }
 
 void loop() {
-  proximity.getDistance();
+  Serial.println(proximity.getDistance());
   delay(500);
 }
 ```
